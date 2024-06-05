@@ -1,0 +1,125 @@
+.sensor__whatsensor {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sensor__whatsensor-feature {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.sensor__whatsensor-feature.sensor__features-container__feature {
+    margin: 0;
+}
+
+.sensor__whatsensor-feature .sensor__features-container_feature-text {
+    max-width: 700px;
+}
+
+.sensor__whatsensor-heading {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem 1rem 0rem;
+}
+
+.sensor__whatsensor-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 700px;
+}
+
+.sensor__whatsensor-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.sensor__whatsensor-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row-reverse wrap;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.sensor__whatsensor-container .sensor__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .sensor__whatsensor-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .sensor__whatsensor-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .sensor__whatsensor-feature.sensor__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .sensor__whatsensor-feature.sensor__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .sensor__whatsensor-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .sensor__whatsensor-container.sensor__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
