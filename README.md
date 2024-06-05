@@ -1,6 +1,6 @@
 # Analog Devices Product Page
 
-First attempt at front-end web development to create a Product Placement Page for the ADXL375 Accelerometer developed by Analog Devices. Made using React.js and styled in CSS.
+First attempt at Javascript-based front-end web development to create a Product Placement Page for the ADXL375 Accelerometer developed by Analog Devices. Made using React.js and styled in CSS.
 <br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
